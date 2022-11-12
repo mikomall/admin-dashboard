@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Modern Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <input type="checkbox" id="menu-toggle">
+    <div class="sidebar">
+        <div class="side-header">
+            <img src="image/dash.png" alt="logo">
+            <h6>custom dashboard</h6>
+        </div>
+        
+        <div class="side-content">
+            <div class="profile">
+                
+            <!--
+                <a href="" class="button"><i class="fa fa-plus">Add</i></a>
+                <a href="#" class="button"><i class="fa fa-pencil">Create</i></a>
+                -->
+
+            <button id="myBtn"><i class="fa fa-plus"> Add </i></button>
+            <!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    
+    <p>
+        Dashboard Type
+   
+    </p>
+  </div>
+</div>
+      <br><br>         
+<button id="myBtnc"> <i class="fa fa-pencil" style="color:rgb(0, 0, 0);"></i> Create </i></button>    
+            </div>
+
+<!--sidebar menu-->
+            
+            <div class="side-menu">
+                <ul>
+                    <li>
+                        <hr style="border-top: 1px  rgb(221, 214, 214); ">
+                       <a href="" >
+                          
+                         <span class="fa fa-check-square-o" style="color:rgb(0, 0, 0); padding-top: 0.2px;">   <small>All</small> </span>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="">
+                            
+                        <span class="fa fa-clock-o" style="color:rgb(0, 0, 0)"> <small>Recent</small> </span>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="">
+                          
+                        <span class="fa fa-star-o" style="color:rgb(0, 0, 0)"> <small>starred</small> </span>
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                       <a href="">
+                           
+                        <span class="fa fa-newspaper-o" style="color:rgb(0, 0, 0)"> <small>Test Demo</small> </span>
+                        </a>
+                    </li>
+                    <li>
+                       <a href=""class="active" >
+                           
+                        <span class="fa fa-newspaper-o" style="color:rgb(0, 0, 0)"> <small>Page Builder Demo </small> </span>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="">
+                           
+                        <span class="fa fa-newspaper-o" style="color:rgb(0, 0, 0)"> <small>Metabase</small> </span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <!--sidebar haeder-->
+        
+        <header>
+            <div class="header-content">
+                <label for="menu-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+                
+                <div class="header-menu">
+                    
+                   
+                    <label for="">
+                        <div class="search_box">
+                            <input type="text"  placeholder="Search">
+                            <i class="fa fa-search"></i>
+                        </div>
+                       
+                    </label>
+                    
+                    <div class="notify-icon">
+                        <span class="las la-ellipsis-v" style="color:white"></span>
+                        <span class="notify"></span>
+                    </div>
+                    
+                    <div class="notify-icon">
+                        <span class="fa fa-bell" style="color:white"></span>
+                        <span class="notify">0</span>
+                    </div>
+                    
+                    <div class="notify-icon">
+                        <span class="fa fa-user"style="color:white"></span>
+                        <span class="notify">0</span>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        
+        
+        <main>
+            
+            <div class="page-header">
+
+               <!-- <div class="left"><h5>Page Builder Demo</h5></div>
+                <div class="right"><h5>Page Builder Demo</h5></div>
+               -->
+               <table>
+                <tr class="head">
+                  <th>Page Builder Demo</th>
+                  <td> 
+                   <input type="text" placeholder="filter"> 
+                   <i class="fa fa-search"></i>
+                </td>
+                </tr>
+                <tr>
+              </table>
+            </div>
+            
+            <!--dashboard cards-->
+            <div class="page-content">
+            
+                <div class="analytics">
+
+                    <div class="card">
+                        <div class="card-head">
+                        
+                                <div class="child">
+                            
+                                  <input type="checkbox" checked="checked" id="favorite" name="favorite-checkbox" value="favorite-button">
+                                  <label for="favorite" class="container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"> 
+                                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                            
+                                    <div class="action">
+                                      <span class="option-1"></span>
+                                      <span class="option-2"></span>
+                                    </div>
+                            
+                                  </label>
+                                </div>
+                            
+                            <h2>Dashboard</h2>
+                            <span class="las la-ellipsis-v"></i></span>
+                        </div>
+                        <div class="card-progress">
+                            <small>Test Demo </small>
+                            
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-head">
+                            <h2>Dashboard</h2>
+                            
+                        </div>
+                        <div class="card-progress">
+                            <small>Test Demo </small>
+                           
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-head">
+                            <h2>Dashboard</h2>
+                           
+                        </div>
+                        <div class="card-progress">
+                            <small>Test Demo </small>
+                           
+                        </div>
+                    </div>
+
+                    </div>
+
+                </div>
+
+                </div>
+            
+            </div>
+            
+        </main>
+        
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+
+</body>
+</html>s
