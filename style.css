@@ -579,14 +579,7 @@ main {
     font-size: 1.2rem;
     color: var(--text-grey);
 }
-/*
-.card-progress small {
-    color: #333;
-    font-size: 0.7rem;
-    font-weight: 400;
 
-}
-*/
 
 .card-progress {
     color: rgb(214, 208, 208);
