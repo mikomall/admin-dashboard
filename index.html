@@ -7,8 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+
 </head>
 <body>
+
+<!--sidebar -->  
+
    <input type="checkbox" id="menu-toggle">
     <div class="sidebar">
         <div class="side-header">
@@ -19,18 +25,23 @@
         <div class="side-content">
             <div class="profile">
 
+<!--Open The Modal -->
             <button id="myBtn"><i class="fa fa-plus"> Add </i></button>
-            <!-- Trigger/Open The Modal -->
+            <br><br>
+            <button id="myBtnc"> <i class="fa fa-pencil" style="color:rgb(0, 0, 0);"></i> Create </i></button>
 
 
 <!-- The Modal -->
+
 <div id="myModal" class="modal">
 
-  <!-- Modal content -->
+<!-- Modal content -->
+
+
   <div class="modal-content">
     <span class="close">&times;</span>
     
-    <p>
+    
         <form class="dashpop">
             <br>
 
@@ -116,16 +127,13 @@
               <p class="button">
               <button class="button button1">Cancel</button>
               <button class="button button2">Save</button>
-</p>
-        </form>
-        
-   
-    </p>
-  </div>
-</div>
-      <br><br>         
-<button id="myBtnc"> <i class="fa fa-pencil" style="color:rgb(0, 0, 0);"></i> Create </i></button>    
-            </div>
+
+             </form>
+                     </p>
+                        </div>
+             </div>
+     
+        </div>
 
 <!--sidebar menu-->
             
@@ -175,8 +183,11 @@
         </div>
     </div>
     
+
+
+  <!--sidebar haeder-->  
+
     <div class="main-content">
-        <!--sidebar haeder-->
         
         <header>
             <div class="header-content">
@@ -223,7 +234,7 @@
                 <tr class="head">
                   <th>Page Builder Demo</th>
                   <td> 
-                   <input type="text" placeholder="filter"> 
+                   <input type="text" placeholder="filter" id="filterInput"> 
                    <i class="fa fa-search"></i>
                 </td>
                 </tr>
@@ -231,7 +242,8 @@
               </table>
             </div>
             
-            <!--dashboard cards-->
+  <!--dashboard cards-->
+
             <div class="page-content">
             
                 <div class="analytics">
@@ -290,19 +302,22 @@
                   </tr>
                 </table>
 
-               
-
                     </div>
 
-                </div>
+                   </div>
 
                 </div>
-            
+                
             </div>
             
         </main>
         
     </div>
+
+
+
+  <!--script for modal box-->
+
     <script>
         // Get the modal
         var modal = document.getElementById("myModal");
@@ -330,6 +345,11 @@
           }
         }
         </script>
+
+<!--script for filter search-->
+ <script src="./AddFilter.js"></script>
+
+
 
 </body>
 </html>s
